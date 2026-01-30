@@ -27,5 +27,12 @@ class Conta:
         transacao = Transacao(tipo = 'saque', valor = valor)
         self._historico_transacoes.append(transacao)
 
+    def extrato(self):
+        transacoes = []
+        for transacao in self._historico_transacoes:
+            transacoes.append(transacao)
+        return transacoes
+    
+
         
 
